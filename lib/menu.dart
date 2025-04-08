@@ -17,6 +17,28 @@ class Menu extends StatelessWidget {
                   Image.asset("images/salamino.jpg",
                   width: 100,
                   height: 100,),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Texto 1", style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
+                        ),
+                        Text("Texto 2",
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.black87
+                        ),),
+                        Text("Texto 3",
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.black54),
+                        )
+                      ],
+                    ),
+                  )
                 ],
               ),
             ),
