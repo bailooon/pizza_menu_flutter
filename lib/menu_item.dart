@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:pizza_menu/pizza_data.dart';
 
 class MenuItem extends StatelessWidget {
-  const MenuItem({super.key});
+  final Pizza pizza;
+  const MenuItem({super.key, required this.pizza});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +17,7 @@ class MenuItem extends StatelessWidget {
               child: Row(
                 children: [
                   Image.asset(
-                    "images/salamino.jpg",
+                    "images/${pizza.photoName}",
                     width: 100,
                     height: 100,
                   ),
